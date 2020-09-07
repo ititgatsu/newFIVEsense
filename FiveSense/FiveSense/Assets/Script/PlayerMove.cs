@@ -7,9 +7,9 @@ public class PlayerMove : MonoBehaviour
     public float speed;
     void Start()
     {
-        
+        Application.targetFrameRate = 60;
     }
-    void FixedUpdate()
+    void Update()
     {
         if (Input.GetKey(KeyCode.A))
         {
